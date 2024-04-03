@@ -6,7 +6,7 @@
 
 ```lua
 Config.Doors = {
-    ['<Vollständiger Name der Wache>'] = {   -- Vollständiger Name der Wache
+    ['<Vollständiger Name der Wache>'] = {
         ['<T1-TX>'] = <Tür-ID von doorscreator/ox_doorlock>,
         ...
     },
