@@ -15,7 +15,6 @@ end)
 if GetResourceState('doors_creator') == 'started' then
     print('Doorscreator erkannt')
     OpenDoor = function(door)
-        print('Ich möchte öffnen: '..door)
         exports["doors_creator"]:setDoorState(door, 0)
         Wait(2*60*1000)
         exports["doors_creator"]:setDoorState(door, 1)
