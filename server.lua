@@ -1,12 +1,13 @@
 RegisterServerEvent("emergencydispatch:alarmierung:wache")
 AddEventHandler("emergencydispatch:alarmierung:wache", function(wache)
+	Wait(1000)
     local vehicles = exports['emergencydispatch']:mannedvehicles()
 
-    for k, v in pairs(vehicles) do
+    for k, v in ipairs(vehicles) do
         if v.status == 2 and v.leitstelle == 'C' then
             if Config.Vehicles[v.value] and Config.Vehicles[v.value].Wache == wache then
                 local tor = Config.Vehicles[v.value].Tor
-                OpenDoor(Config.Doors[wache][tor])
+                Citizen.CreateThread(function() OpenDoor(Config.Doors[wache][tor]) end)
             end
         end
     end
