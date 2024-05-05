@@ -33,3 +33,17 @@ else
         print('Keine Ressource gefunden')
     end
 end
+
+RegisterNetEvent('emd_openStation', function(station)
+    for door, doorId in pairs(Config.Doors[station]) do
+        exports["doors_creator"]:setDoorState(doorId, 0)
+    end
+end)
+RegisterNetEvent('emd_closeStation', function(station)
+    for door, doorId in pairs(Config.Doors[station]) do
+        exports["doors_creator"]:setDoorState(doorId, 1)
+    end
+end)
+RegisterNetEvent('emd_openDoor', function(doorId)
+    exports["doors_creator"]:setDoorState(doorId, 0)
+end)
