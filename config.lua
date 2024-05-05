@@ -22,9 +22,9 @@ Config.Vehicles = {
     ['1 RTW 1'] = { Wache = 'Feuer- und Rettungswache 1', Tor = 'T2' },
     ['1 RTW 2'] = { Wache = 'Feuer- und Rettungswache 1', Tor = 'T3' },
     ['1 RTW 3'] = { Wache = 'Feuer- und Rettungswache 1', Tor = 'T4' },
-    ['1 Engine 1'] = { Wache = 'Feuer- und Rettungswache 1', Tor = 'T5' },
-    ['1 Ladder 1'] = { Wache = 'Feuer- und Rettungswache 1', Tor = 'T6' },
-    ['1 Engine 2'] = { Wache = 'Feuer- und Rettungswache 1', Tor = 'T7' },
+    ['1 HLF 1'] = { Wache = 'Feuer- und Rettungswache 1', Tor = 'T5' },
+    ['1 DLK 1'] = { Wache = 'Feuer- und Rettungswache 1', Tor = 'T6' },
+    ['1 HLF 2'] = { Wache = 'Feuer- und Rettungswache 1', Tor = 'T7' },
     ['4 NEF 1'] = { Wache = 'Rettungswache Klinikum', Tor = 'T1' },
     ['4 NEF 2'] = { Wache = 'Rettungswache Klinikum', Tor = 'T2' },
 }
