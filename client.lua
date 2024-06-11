@@ -4,10 +4,16 @@ RegisterNetEvent('esx:setJob', function(job, lastJob)
     playerJob = job.name
 end)
 AddEventHandler('esx:playerLoaded', function()
+    while ESX.GetPlayerData().job == nil do
+		Wait(100)
+	end
     playerJob = ESX.GetPlayerData().job.name
 end)
 AddEventHandler('onClientResourceStart', function(resourceName)
     if GetCurrentResourceName() ~= resourceName then return end
+    while ESX.GetPlayerData().job == nil do
+		Wait(100)
+	end
     playerJob = ESX.GetPlayerData().job.name
 end)
 
