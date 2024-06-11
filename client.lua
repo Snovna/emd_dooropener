@@ -4,11 +4,11 @@ RegisterNetEvent('esx:setJob', function(job, lastJob)
     playerJob = job.name
 end)
 AddEventHandler('esx:playerLoaded', function()
-    playerJob = ESX.PlayerData.job.name
+    playerJob = ESX.GetPlayerData().job.name
 end)
 AddEventHandler('onClientResourceStart', function(resourceName)
     if GetCurrentResourceName() ~= resourceName then return end
-    playerJob = ESX.PlayerData.job.name
+    playerJob = ESX.GetPlayerData().job.name
 end)
 
 local vehiclesTable = {}
